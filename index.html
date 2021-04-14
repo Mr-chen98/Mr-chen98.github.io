@@ -154,27 +154,36 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-只显示部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
+      <a class="article-title" href="/2021/04/12/%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86/">设置hexo首页只显示部分摘要（不显示全文）</a>
     </h1>
   
 
         
-        <a href="/2021/04/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-04-03T12:10:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-03</time>
+        <a href="/2021/04/12/%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86/" class="archive-article-date">
+  	<time datetime="2021-04-12T03:09:49.487Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="11111111"><a href="#11111111" class="headerlink" title="11111111"></a>11111111</h2><h3 id="1111"><a href="#1111" class="headerlink" title="1111"></a>1111</h3>
+        <h1 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h1><p>在文章的<code>front-matter</code>中添加<code>description</code>，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>比较不方便的还是得写一下概述，很多时候会懒得写概述，于是就要第二种方法了。</p>
+<h1 id="方法二：文章截断"><a href="#方法二：文章截断" class="headerlink" title="方法二：文章截断"></a>方法二：文章截断</h1><p>在需要截断的地方加入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+
+<p>首页就会显示这条以上的所有内容，隐藏接下来的所有内容。</p>
+<p>这两种方法各有利弊，如果开头不怎么好看就用第一种方法，反之用第二种方法。</p>
+
       
 
       
@@ -186,7 +195,167 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/04/12/%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-markdown语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/09/markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
+    </h1>
+  
+
+        
+        <a href="/2021/04/09/markdown%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2021-04-09T08:01:05.910Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>“—”（三个减号）</p>
+<hr>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**  *斜体*  ***斜体加粗***  ~~删除线~~  ==高亮==   我是^上标^  我是~下标~</span><br></pre></td></tr></table></figure>
+
+<p><strong>加粗</strong>       <em>斜体</em>        <em><strong>斜体加粗</strong></em>       <del>删除线</del>       ==高亮==       我是^上标^       我是<del>下标</del></p>
+<hr>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">+一二三四五</span><br><span class="line"> +上山打老虎</span><br><span class="line">  +老虎没打到</span><br><span class="line">   +打到小松鼠</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>一二三四五<ul>
+<li>上山打老虎<ul>
+<li>老虎没打到<ul>
+<li>打到小松鼠</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.一二三四五</span><br><span class="line">2.上山打老虎</span><br><span class="line">3.老虎没打到</span><br><span class="line">4.打到小松鼠</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>一二三四五</li>
+<li>上山打老虎</li>
+<li>老虎没打到</li>
+<li>打到小松鼠</li>
+</ol>
+<hr>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|Mon |Tus |Wed |Thu |Fri |</span><br></pre></td></tr></table></figure>
+
+<p>用|符号即可调出表格</p>
+<table>
+<thead>
+<tr>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上山</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>打老虎</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;我是代码&#96;</span><br></pre></td></tr></table></figure>
+
+<p><code>我是代码</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;我是代码框</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是代码框</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;一二三四五</span><br><span class="line">&gt;&gt;上山打老虎</span><br><span class="line">&gt;&gt;&gt;老虎没打到</span><br><span class="line">&gt;&gt;&gt;&gt;打到小松鼠</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一二三四五</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>上山打老虎</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>老虎没打到</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>打到小松鼠</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-------------</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/04/09/markdown%E8%AF%AD%E6%B3%95/">展开全文 >></a>
         </p>
       
 
