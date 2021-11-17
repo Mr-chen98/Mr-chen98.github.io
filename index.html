@@ -157,12 +157,26 @@
     <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/11/16/test/">Hexo yilia主题使用秘籍</a>
+    </h1>
+  
+
+        
+        <a href="/2021/11/16/test/" class="archive-article-date">
+  	<time datetime="2021-11-16T14:08:34.254Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-16</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p><del># test</del></p>
-<p>date </p>
-<p>111111111111111111111111111111111111111111111</p>
-
+        <ul>
+<li><p>添加图片资源文件夹。路径为<code>themes/yilia/source/</code>下，可添加一个<code>assets</code>文件夹，里面存放图片资源即可</p></li></ul>
+        
       
 
       
@@ -224,16 +238,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h1><p>在文章的<code>front-matter</code>中添加<code>description</code>，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>比较不方便的还是得写一下概述，很多时候会懒得写概述，于是就要第二种方法了。</p>
-<h1 id="方法二：文章截断"><a href="#方法二：文章截断" class="headerlink" title="方法二：文章截断"></a>方法二：文章截断</h1><p>在需要截断的地方加入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-
-<p>首页就会显示这条以上的所有内容，隐藏接下来的所有内容。</p>
-<p>这两种方法各有利弊，如果开头不怎么好看就用第一种方法，反之用第二种方法。</p>
-
+        <h3 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h3><p>在文章的<code>front-matter</code>中添加<code>description</code>，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
+        
       
 
       
@@ -295,105 +301,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>“—”（三个减号）</p>
+        <h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>“—”（三个减号）</p>
 <hr>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**  *斜体*  ***斜体加粗***  ~~删除线~~  ==高亮==   我是^上标^  我是~下标~</span><br></pre></td></tr></table></figure>
-
-<p><strong>加粗</strong>       <em>斜体</em>        <em><strong>斜体加粗</strong></em>       <del>删除线</del>       ==高亮==       我是^上标^       我是<del>下标</del></p>
-<hr>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">+一二三四五</span><br><span class="line"> +上山打老虎</span><br><span class="line">  +老虎没打到</span><br><span class="line">   +打到小松鼠</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>一二三四五<ul>
-<li>上山打老虎<ul>
-<li>老虎没打到<ul>
-<li>打到小松鼠</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.一二三四五</span><br><span class="line">2.上山打老虎</span><br><span class="line">3.老虎没打到</span><br><span class="line">4.打到小松鼠</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>一二三四五</li>
-<li>上山打老虎</li>
-<li>老虎没打到</li>
-<li>打到小松鼠</li>
-</ol>
-<hr>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|Mon |Tus |Wed |Thu |Fri |</span><br></pre></td></tr></table></figure>
-
-<p>用|符号即可调出表格</p>
-<table>
-<thead>
-<tr>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>上山</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>打老虎</td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;我是代码&#96;</span><br></pre></td></tr></table></figure>
-
-<p><code>我是代码</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;我是代码框</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是代码框</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;一二三四五</span><br><span class="line">&gt;&gt;上山打老虎</span><br><span class="line">&gt;&gt;&gt;老虎没打到</span><br><span class="line">&gt;&gt;&gt;&gt;打到小松鼠</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>一二三四五</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>上山打老虎</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>老虎没打到</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>打到小松鼠</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<hr>
-<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-------------</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-
+        
       
 
       
@@ -456,19 +366,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        
       
 
       
